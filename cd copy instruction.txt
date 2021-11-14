@@ -1,0 +1,3 @@
+cdrdao read-cd --device /dev/cdrom --paranoia-mode 2 --read-raw data.toc
+toc2cue data.toc data.cue
+bchunk -v -r data.bin data.cue data
